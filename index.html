@@ -174,12 +174,12 @@
           </div>
           <div class="w-full">
             <h1
-              class="text-3xl md:text-2xl text-white list-item font-semibold pb-3"
+              class="text-2xl md:text-2xl text-white list-item font-semibold pb-3"
             >
               Education:
             </h1>
             <div class="flex justify-between items-center gap-x-5">
-              <p class="text-white text-xl md:text-md">
+              <p class="text-white text-base">
                 Bachelors at Urdu Literature from GC Universoty Lahore.
               </p>
               <p class="text-white text-xs text-nowrap font-semibold">
@@ -189,16 +189,16 @@
           </div>
           <div>
             <h1
-              class="text-3xl md:text-2xl text-white list-item font-semibold pb-3"
+              class="text-2xl md:text-2xl text-white list-item font-semibold pb-3"
             >
               Passion:
             </h1>
-            <p class="text-white text-xl md:text-md">UI Development.</p>
+            <p class="text-white text-base">UI Development.</p>
           </div>
           <div
             class="p-5 border border-gray-400 text-white rounded-lg text-xl md:text-sm lg:text-lg"
           >
-            <p>
+            <p class="text-base">
               I hold a Bachelor's degree in Urdu Literature, but my passion for
               creativity and technology led me to explore the world of UI
               development. Over time, I have gained hands-on experience in HTML,
@@ -295,37 +295,59 @@
     <section>
       <div class="wrapper w-[95%] mx-auto">
         <div class="my-10">
-          <h1 class="text-white text-8xl font-namefont">My Projects</h1>
+          <h1 class="text-white text-6xl md:text-8xl font-namefont">
+            My Projects
+          </h1>
         </div>
-        
 
-            <div class="totc-wrapper gap-x-7 flex justify-around">
-
-          <div class="left-side relative flex group cursor-pointer rounded-lg w-[50%] mx-auto">
-            
-            <img class=" size-min rounded-xl" src="/assets/totc.png" alt="TOTC"/>
-            
-            
-            <!-- blur layer  -->
-            <div class=" absolute inset-0 bg-transparent backdrop-blur-none group-hover:backdrop-blur-sm transition-all z-0 rounded-xl">
+        <div
+          class="totc-wrapper mx-auto gap-x-7 gap-y-10 flex flex-col md:flex-row"
+        >
+          <div
+            class="left-side md:w-[40%] lg:w-[50%] relative flex group cursor-pointer rounded-lg"
+          >
+            <div>
+              <img class="rounded-xl" src="/assets/totc.png" alt="TOTC" />
             </div>
-            
+
+            <!-- blur layer  -->
+            <div
+              class="absolute inset-0 bg-transparent backdrop-blur-none md:group-hover:backdrop-blur-sm transition-all z-0 rounded-xl"
+            ></div>
+
             <!-- button  -->
-            <a class="absolute left-1/2 bottom-[-1.25rem] -translate-x-1/2 z-10 w-fit px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all hover:underline group-hover:-translate-y-40 md:text-sm lg:text-md text-nowrap"
+            <a
+              class="absolute left-[50%] bottom-[-1.25rem] -translate-x-[50%] z-10 w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all hover:underline md:group-hover:-translate-y-24 lg:group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap"
               href="https://totc-woad.vercel.app/"
-              target="_blank">View Full Project</a>
+              target="_blank"
+              >View Full Project</a
+            >
           </div>
 
-          <!-- <div class="right-side container flex flex-col text-white md:w-[60%] lg:w-[50%] mx-auto space-y-10">
-            <h1 class="text-4xl font-myfont">TOTC</h1>
-            <p>TOTC – The Online Teaching Center is a modern education platform designed to make learning accessible, engaging, and interactive. With a clean, user-friendly UI, the website offers a seamless experience for students and educators alike. From course discovery to interactive dashboards, every element is crafted to enhance usability and responsiveness. The design ensures mobile-first compatibility using HTML, Tailwind CSS, and modern web techniques. TOTC reflects a commitment to digital education with a sleek, professional aesthetic.</p>
+          <div
+            class="right-side md:w-[55%] lg:w-[50%] flex flex-col text-white space-y-5 md:space-y-4 lg:space-y-7"
+          >
+            <h1 class="text-4xl md:text-2xl lg:text-4xl font-myfont">TOTC</h1>
+            <p class="md:text-[10px] lg:text-sm">
+              TOTC – The Online Teaching Center is a modern education platform
+              designed to make learning accessible, engaging, and interactive.
+              With a clean, user-friendly UI, the website offers a seamless
+              experience for students and educators alike. From course discovery
+              to interactive dashboards, every element is crafted to enhance
+              usability and responsiveness. The design ensures mobile-first
+              compatibility using HTML, Tailwind CSS, and modern web techniques.
+              TOTC reflects a commitment to digital education with a sleek,
+              professional aesthetic.
+            </p>
             <div class="btn">
-                <button class="w-fit px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all group-hover:underline group-hover:-translate-y-40 md:text-sm lg:text-md text-nowrap hover:underline">See More...</button>
-            </div> -->
+              <button
+                class="w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all group-hover:underline group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap hover:underline"
+              >
+                See More...
+              </button>
+            </div>
           </div>
-
         </div>
-
       </div>
     </section>
   </body>
