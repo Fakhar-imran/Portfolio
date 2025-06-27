@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
     <title>My-Portfolio</title>
   </head>
   <body
-    class="bg-gradient-to-r from-slate-900 from-10% via-blue-950 via-60% to-red-950 to-80% h-[5000px]"
+    class="overflow-x-hidden bg-gradient-to-r from-slate-900 from-10% via-blue-950 via-60% to-red-950 to-80%"
   >
     <header
       class="bg-[url('/assets/bg-img1.png')] bg-cover bg-no-repeat w-[95%] mx-auto rounded-lg mt-6 pb-7"
@@ -293,8 +293,10 @@
 
     <!-- project section  -->
     <section>
-      <div class="wrapper w-[95%] mx-auto">
-        <div class="my-10">
+      <div class="parent-wrapper w-[95%] mx-auto space-y-28 md:space-y-44 mb-36">
+
+        <!-- totc project  -->
+        <div>
           <h1 class="text-white md:text-left text-center text-6xl md:text-8xl font-namefont">
             My Projects
           </h1>
@@ -329,7 +331,98 @@
           >
             <h1 class="text-4xl md:text-2xl lg:text-4xl font-myfont">TOTC</h1>
             <p class="md:text-[10px] lg:text-sm">
-              TOTC – The Online Teaching Center is a modern education platform
+              TOTC - The Online Teaching Center is a modern education platform
+              designed to make learning accessible, engaging, and interactive. A landing page,
+              With a clean, user-friendly UI, the website offers a seamless
+              experience for students and educators alike. Every element is crafted to enhance
+              usability and responsiveness. The design ensures mobile-first
+              compatibility using HTML, Tailwind CSS, and modern web techniques.
+              TOTC reflects a commitment to digital education with a sleek,
+              professional aesthetic.
+            </p>
+            <div class="btn">
+              <button
+                class="w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all group-hover:underline group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap hover:underline"
+              >
+                See More...
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- digix project  -->
+        <div
+          class="digix-wrapper mx-auto gap-x-7 gap-y-10 flex flex-col-reverse md:flex-row"
+        >
+          <div
+            class="left-side md:w-[55%] lg:w-[50%] flex flex-col text-white space-y-5 md:space-y-4 lg:space-y-7"
+          >
+            <h1 class="text-4xl md:text-2xl lg:text-4xl font-myfont">DIGIX</h1>
+            <p class="md:text-[10px] lg:text-sm">
+              Digix - a modern online education platform designed to teach a variety of digital skills. I designed and developed this project using HTML and Bootstrap. The website is fully mobile responsive, ensuring a seamless user experience across all devices. Its clean layout and structured design make it a great example of a user-friendly interface..
+            </p>
+            <div class="btn">
+              <button
+                class="w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all group-hover:underline group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap hover:underline"
+              >
+                See More...
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="right-side md:w-[40%] lg:w-[50%] relative flex group cursor-pointer rounded-lg"
+          >
+            <div>
+              <img class="rounded-xl" src="/assets/digix.png" alt="DIGIX" />
+            </div>
+
+            <!-- blur layer  -->
+            <div
+              class="absolute inset-0 bg-transparent backdrop-blur-none md:group-hover:backdrop-blur-sm transition-all z-0 rounded-xl"
+            ></div>
+
+            <!-- button  -->
+            <a
+              class="absolute left-[50%] bottom-[-1.25rem] -translate-x-[50%] z-10 w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all hover:underline md:group-hover:-translate-y-24 lg:group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap"
+              href="https://digix-zeta.vercel.app/index.html"
+              target="_blank"
+              >View Full Project</a
+            >
+          </div>
+        </div>
+
+<!-- frontic project  -->
+<div
+          class="frontic-wrapper mx-auto gap-x-7 gap-y-10 flex flex-col md:flex-row"
+        >
+          <div
+            class="left-side md:w-[40%] lg:w-[50%] relative flex group cursor-pointer rounded-lg"
+          >
+            <div>
+              <img class="rounded-xl" src="/assets/frontic.png" alt="TOTC" />
+            </div>
+
+            <!-- blur layer  -->
+            <div
+              class="absolute inset-0 bg-transparent backdrop-blur-none md:group-hover:backdrop-blur-sm transition-all z-0 rounded-xl"
+            ></div>
+
+            <!-- button  -->
+            <a
+              class="absolute left-[50%] bottom-[-1.25rem] -translate-x-[50%] z-10 w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all hover:underline md:group-hover:-translate-y-24 lg:group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap"
+              href="https://frontic-six.vercel.app/index.html"
+              target="_blank"
+              >View Full Project</a
+            >
+          </div>
+
+          <div
+            class="right-side md:w-[55%] lg:w-[50%] flex flex-col text-white space-y-5 md:space-y-4 lg:space-y-7"
+          >
+            <h1 class="text-4xl md:text-2xl lg:text-4xl font-myfont">FRONTIC</h1>
+            <p class="md:text-[10px] lg:text-sm">
+              TOTC - The Online Teaching Center is a modern education platform
               designed to make learning accessible, engaging, and interactive.
               With a clean, user-friendly UI, the website offers a seamless
               experience for students and educators alike. From course discovery
@@ -348,7 +441,149 @@
             </div>
           </div>
         </div>
+        
+        <!-- netflix project  -->
+         <div
+          class="netflix-wrapper mx-auto gap-x-7 gap-y-10 flex flex-col-reverse md:flex-row"
+        >
+          <div
+            class="left-side md:w-[55%] lg:w-[50%] flex flex-col text-white space-y-5 md:space-y-4 lg:space-y-7"
+          >
+            <h1 class="text-4xl md:text-2xl lg:text-4xl font-myfont">NETFLIX</h1>
+            <p class="text-xl md:text-lg lg:text-xl">
+              Netflix - A clone of netflix landing page.
+            </p>
+            <div class="btn">
+              <button
+                class="w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all group-hover:underline group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap hover:underline"
+              >
+                See More...
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="right-side md:w-[40%] lg:w-[50%] relative flex group cursor-pointer rounded-lg"
+          >
+            <div>
+              <img class="rounded-xl" src="/assets/netflix.png" alt="NETFLIX" />
+            </div>
+
+            <!-- blur layer  -->
+            <div
+              class="absolute inset-0 bg-transparent backdrop-blur-none md:group-hover:backdrop-blur-sm transition-all z-0 rounded-xl"
+            ></div>
+
+            <!-- button  -->
+            <a
+              class="absolute left-[50%] bottom-[-1.25rem] -translate-x-[50%] z-10 w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all hover:underline md:group-hover:-translate-y-24 lg:group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap"
+              href="https://netflix-roan.vercel.app/"
+              target="_blank"
+              >View Full Project</a
+            >
+          </div>
+        </div>
+
+        <!-- touraza project -->
+
+        <div
+          class="touraza-wrapper mx-auto gap-x-7 gap-y-10 flex flex-col md:flex-row"
+        >
+          <div
+            class="left-side md:w-[40%] lg:w-[50%] relative flex group cursor-pointer rounded-lg"
+          >
+            <div>
+              <img class="rounded-xl" src="/assets/touraza.png" alt="Touraza" />
+            </div>
+
+            <!-- blur layer  -->
+            <div
+              class="absolute inset-0 bg-transparent backdrop-blur-none md:group-hover:backdrop-blur-sm transition-all z-0 rounded-xl"
+            ></div>
+
+            <!-- button  -->
+            <a
+              class="absolute left-[50%] bottom-[-1.25rem] -translate-x-[50%] z-10 w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all hover:underline md:group-hover:-translate-y-24 lg:group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap"
+              href="https://touraza-omega.vercel.app/"
+              target="_blank"
+              >View Full Project</a
+            >
+          </div>
+
+          <div
+            class="right-side md:w-[55%] lg:w-[50%] flex flex-col text-white space-y-5 md:space-y-4 lg:space-y-7"
+          >
+            <h1 class="text-4xl md:text-2xl lg:text-4xl font-myfont">TOURAZA</h1>
+            <p class="md:text-[10px] lg:text-sm">
+              Touraza - a sleek and modern website designed for a world tour company that offers international travel experiences. I designed and developed this website using HTML and CSS. The site is fully mobile responsive and provides a smooth, user-friendly experience on all screen sizes. Its elegant layout and vibrant visuals reflect the spirit of global adventure.
+            </p>
+            <div class="btn">
+              <button
+                class="w-fit px-6 lg:px-10 py-2 text-center text-white bg-gradient-to-r from-blue-600 to-red-600 rounded-full transform transition-all group-hover:underline group-hover:-translate-y-40 md:text-xs lg:text-base text-nowrap hover:underline"
+              >
+                See More...
+              </button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+    <!-- Contact  -->
+     <!-- <section>
+     <div class="wrapper w-[95%] mx-auto mb-28 ">
+      <h1 class="text-white text-4xl font-myfont pb-5 text-center">CONTACT</h1>
+
+      <div class="flex justify-around items-center w-[80%] mx-auto py-6 px-10 border rounded-lg bg-transparent space-x-3"> -->
+<!-- whatsapp  -->
+      <!-- <div class="whatsapp group flex flex-col justify-center items-center text-white p-3 border rounded-lg shadow-lg shadow-green-600 hover:scale-105 transition-all cursor-pointer">
+        <a href="https://wa.me/3233656523" target="_blank">
+          <i class="fa-brands fa-whatsapp text-3xl lg:text-5xl text-green-600"></i>
+        </a>
+        <a class="text-sm lg:text-xl group-hover:underline" href="https://wa.me/3233656523" target="_blank">Whatsapp</a>
+      </div> -->
+      <!-- mail  -->
+      <!-- <div class="mail group flex flex-col justify-center items-center text-white p-3 border rounded-lg shadow-lg shadow-red-600 hover:scale-105 transition-all cursor-pointer">
+        <a href="mailto:fakharimran22@gmail.com" target="_blank">
+         <i class="fa-solid fa-envelope text-3xl lg:text-5xl  text-red-600"></i>
+        </a>
+        <a class="text-sm lg:text-xl group-hover:underline" href="mailto:fakharimran22@gmail.com" target="_blank">Email</a>
+      </div> -->
+<!-- facebook  -->
+      <!-- <div class="facebook group flex flex-col justify-center items-center text-white p-3 border rounded-lg shadow-lg shadow-blue-500 hover:scale-105 transition-all cursor-pointer">
+        <a href="https://web.facebook.com/fakhar.imran.948" target="_blank">
+          <i class="fa-brands fa-square-facebook text-3xl lg:text-5xl  text-blue-500"></i>
+        </a>
+        <a class="text-sm lg:text-xl group-hover:underline" href="https://web.facebook.com/fakhar.imran.948" target="_blank">Facebook</a>
+      </div> -->
+<!-- instagram  -->
+      <!-- <div class="instagram group flex flex-col justify-center items-center text-white p-3 border rounded-lg shadow-lg shadow-orange-600 hover:scale-105 transition-all cursor-pointer">
+        <a href="https://www.instagram.com/fakhar_g_imran/" target="_blank">
+          <i class="fa-brands fa-instagram text-3xl lg:text-5xl  text-orange-600"></i>
+        </a>
+        <a class="text-sm lg:text-xl group-hover:underline" href="https://www.instagram.com/fakhar_g_imran/" target="_blank">Instagram</a>
+      </div> -->
+<!-- linkdin  -->
+      <!-- <div class="linkdin group flex flex-col justify-center items-center text-white p-3 border rounded-lg shadow-lg shadow-blue-600 hover:scale-105 transition-all cursor-pointer">
+        <a href="https://www.linkedin.com/in/fakhar-imran-8bbaa2282/" target="_blank">
+          <i class="fa-brands fa-linkedin text-3xl lg:text-5xl  text-blue-600"></i>
+        </a>
+        <a class="text-sm lg:text-xl group-hover:underline" href="https://www.linkedin.com/in/fakhar-imran-8bbaa2282/" target="_blank">Linkdin</a>
+      </div> -->
+<!-- twitter  -->
+      <!-- <div class="twitter group flex flex-col justify-center items-center text-white p-3 border rounded-lg shadow-lg shadow-white hover:scale-105 transition-all cursor-pointer">
+        <a href="https://x.com/FakharImran22" target="_blank">
+          <i class="fa-brands fa-x-twitter text-3xl lg:text-5xl "></i>
+        </a>
+        <a class="text-sm lg:text-xl group-hover:underline" href="https://x.com/FakharImran22" target="_blank">Twitter</a>
+      </div>
+
+
+      </div>
+
+     </div>
+     
+
+     </section> -->
   </body>
 </html>
